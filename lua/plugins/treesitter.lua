@@ -51,4 +51,22 @@ return {
       },
     },
   },
+  {
+    "aaronik/treewalker.nvim",
+    opts = {
+      highlight = true, -- Whether to briefly highlight the node after jumping to it
+      highlight_duration = 250, -- How long should above highlight last (in ms)
+    },
+  },
+  {
+    "Wansmer/treesj",
+    keys = {
+      "<space>m", -- toggle split / join
+    },
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function()
+      require("treesj").setup({ --[[ your config ]]
+      })
+    end,
+  },
 }

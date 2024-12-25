@@ -165,3 +165,9 @@ map("n", "<leader>@", function()
   vim.cmd('let @/ = input("/")') -- This prompts for the search pattern
   vim.cmd(string.format("global//normal @%s", register))
 end, { desc = "Global macro with register" })
+
+-- treewalker
+map("n", "<C-M-j>", ":Treewalker Down<CR>", { noremap = true, silent = true })
+map("n", "<C-M-k>", ":Treewalker Up<CR>", { noremap = true, silent = true })
+map("n", "<C-M-h>", ":Treewalker Left<CR>", { noremap = true, silent = true })
+map("n", "<C-M-l>", ":Treewalker Right<CR>", { noremap = true, silent = true })
