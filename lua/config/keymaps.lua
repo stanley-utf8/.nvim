@@ -7,8 +7,8 @@ local map = vim.keymap.set
 -- MOVEMENT
 
 -- basic movement enhancements
-map({ "n", "v" }, "H", "^") -- move to start of line
-map({ "n", "v" }, "L", "$") -- move to end of line
+map({ "n", "v", "o" }, "H", "^") -- move to start of line
+map({ "n", "v", "o" }, "L", "$") -- move to end of line
 map({ "n", "v" }, "<M-H>", "H") -- move to top of screen
 map({ "n", "v" }, "<M-L>", "L") -- move to bottom of screen
 
@@ -18,8 +18,8 @@ map({ "n", "v" }, "<M-L>", "L") -- move to bottom of screen
 map("n", "n", "nzzzv") -- next search result centered
 map("n", "N", "Nzzzv") -- previous search result centered
 
-map({ "n", "v" }, "<C-j>", "8j")
-map({ "n", "v" }, "<C-k>", "8k")
+map({ "n", "v" }, "<M-J>", "8j")
+map({ "n", "v" }, "<M-K>", "8k")
 
 -- jump navigation
 map("n", "<M-q>", "<C-o>") -- jump back
