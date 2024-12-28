@@ -10,10 +10,10 @@ return {
       local set = vim.keymap.set
 
       -- Add or skip adding a new cursor by matching word/selection
-      set({ "n", "v" }, "<leader>n", function()
+      set({ "n", "v" }, "<leader>na", function()
         mc.matchAddCursor(1)
       end)
-      set({ "n", "v" }, "<leader>N", function()
+      set({ "n", "v" }, "<leader>NA", function()
         mc.matchAddCursor(-1)
       end)
 

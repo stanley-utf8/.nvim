@@ -171,3 +171,6 @@ map("n", "<C-M-j>", ":Treewalker Down<CR>", { noremap = true, silent = true })
 map("n", "<C-M-k>", ":Treewalker Up<CR>", { noremap = true, silent = true })
 map("n", "<C-M-h>", ":Treewalker Left<CR>", { noremap = true, silent = true })
 map("n", "<C-M-l>", ":Treewalker Right<CR>", { noremap = true, silent = true })
+
+-- regular normal mode delete rebound to BS
+map("n", "<BS>", "xh")
