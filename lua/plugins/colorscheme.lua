@@ -1,23 +1,27 @@
 return {
+  -- First item
+  -- {
+  --   "catppuccin/nvim",
+  --   lazy = false,
+  --   name = "catppuccin",
+  --   config = function()
+  --     require("catppuccin").setup({
+  --       flavour = "mocha", -- latte, frappe, macchiato, mocha
+  --     })
+  --   end,
+  -- },
+  -- Second item
   {
-    "catppuccin/nvim",
+    "gambhirsharma/vesper.nvim",
     lazy = false,
-    name = "catppuccin",
-    -- you can do it like this with a config function
-    config = function()
-      require("catppuccin").setup({
-        flavour = "mocha", -- latte, frappe, macchiato, mocha
-      })
-    end,
-    -- or just use opts table
-    opts = {
-      -- configurations
-    },
+    priority = 1000,
+    name = "vesper",
   },
+  -- Third item
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "vesper",
     },
   },
 }
