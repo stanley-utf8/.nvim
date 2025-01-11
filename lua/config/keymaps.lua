@@ -18,8 +18,12 @@ map({ "n", "v" }, "<M-L>", "L") -- move to bottom of screen
 map("n", "n", "nzzzv") -- next search result centered
 map("n", "N", "Nzzzv") -- previous search result centered
 
-map({ "n", "v" }, "<M-J>", "8j")
-map({ "n", "v" }, "<M-K>", "8k")
+map({ "n", "v" }, "<C-j>", "8j")
+map({ "n", "v" }, "<C-k>", "8k")
+
+-- move to window using the <ctrl> hjkl keys
+map("n", "<M-J>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+map("n", "<M-K>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
 
 -- jump navigation
 map("n", "<M-q>", "<C-o>") -- jump back
