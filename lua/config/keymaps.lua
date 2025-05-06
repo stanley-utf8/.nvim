@@ -58,8 +58,8 @@ map("v", "/", '"fy/\\V<C-R>f<CR>') -- search and replace in vis
 
 -- COMMAND MODE
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
-map("n", ":", ";", { desc = "repeat find" })
+-- map("n", ";", ":", { desc = "CMD enter command mode" })
+-- map("n", ":", ";", { desc = "repeat find" })
 map("c", "<M-e>", "<Up>") -- command history up
 map("c", "<M-f>", "<Down>") -- command history down
 

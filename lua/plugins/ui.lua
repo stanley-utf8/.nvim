@@ -1,6 +1,6 @@
 return {
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     keys = {
       {
         "<leader>ne",

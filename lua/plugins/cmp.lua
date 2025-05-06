@@ -24,14 +24,20 @@ return {
         ["<C-f>"] = { "scroll_documentation_down", "fallback" },
         ["<C-S-D>"] = { "show", "show_documentation", "hide_documentation" },
         ["<CR>"] = {},
-        cmdline = {
+      },
+      cmdline = {
+        keymap = {
           ["<C-k>"] = { "select_prev", "fallback" },
           ["<C-j>"] = { "select_next", "fallback" },
           ["<C-s>"] = { "select_and_accept" },
         },
+        sources = { "lsp", "path", "snippets", "buffer" },
       },
 
       completion = {
+        list = {
+          selection = { auto_insert = true },
+        },
         ghost_text = {
           enabled = false,
         },
@@ -39,13 +45,6 @@ return {
           draw = {
             -- columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } },
           },
-        },
-      },
-      sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-        -- optionally disable cmdline completions
-        cmdline = {
-          -- enabled_providers = "cmdline",
         },
       },
     },
